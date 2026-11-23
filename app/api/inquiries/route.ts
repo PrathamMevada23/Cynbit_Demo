@@ -35,7 +35,11 @@ function reply(data: object, status: number, headers: Record<string, string> = {
 
 export async function POST(request: Request) {
   const origin = request.headers.get("origin");
-  if (origin && origin !== new URL(request.url).origin) return reply({ message: "Use this form from the assessment site." }, 403);
+  const url = new URL(request.url);
+  // Next can use its internal hostname in request.url. The HTTP Host retains the browser's authority.
+  const scheme = process.env.VERCEL === "1" ? "https:" : url.protocol;
+  const publicOrigin = scheme + "//" + (request.headers.get("host") ?? url.host);
+  if (origin && origin !== publicOrigin) return reply({ message: "Use this form from the assessment site." }, 403);
   if (request.headers.get("content-type")?.split(";")[0].trim().toLowerCase() !== "application/json") {
     return reply({ message: "Send a JSON request." }, 415);
   }
