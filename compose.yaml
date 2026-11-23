@@ -1,0 +1,18 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: cynbit
+      POSTGRES_USER: cynbit
+      POSTGRES_PASSWORD: cynbit_local
+    ports:
+      - "127.0.0.1:55432:5432"
+    volumes:
+      - assessment-db:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U cynbit -d cynbit"]
+      interval: 2s
+      timeout: 2s
+      retries: 15
+volumes:
+  assessment-db:

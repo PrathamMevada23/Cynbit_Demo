@@ -1,0 +1,514 @@
+{
+  "date": "2026-11-23 IST",
+  "browser": "Brave headless Chromium 158.0.8127.42",
+  "units": "milliseconds",
+  "rows": [
+    {
+      "run": "observations",
+      "path": "/case-studies",
+      "http": 200,
+      "timing": {
+        "responseStatus": 200,
+        "responseStart": 135.79999999981374,
+        "requestStart": 106.19999999925494,
+        "responseEnd": 1353.2999999998137,
+        "domContentLoadedEventEnd": 1660.5999999996275,
+        "loadEventEnd": 2260.199999999255,
+        "transferSize": 14880
+      },
+      "fcp": 2096
+    },
+    {
+      "run": "observations",
+      "path": "/case-studies/wizhealth-ai-diagnostic",
+      "http": 200,
+      "timing": {
+        "responseStatus": 200,
+        "responseStart": 49.90000000037253,
+        "requestStart": 6.2000000001862645,
+        "responseEnd": 811.9000000003725,
+        "domContentLoadedEventEnd": 864.5,
+        "loadEventEnd": 918.3000000007451,
+        "transferSize": 10686
+      },
+      "fcp": 872
+    },
+    {
+      "run": "interactions",
+      "path": "/case-studies",
+      "http": 200,
+      "timing": {
+        "responseStatus": 200,
+        "responseStart": 245.90000000037253,
+        "requestStart": 174.1000000005588,
+        "responseEnd": 1492.800000000745,
+        "domContentLoadedEventEnd": 1801.800000000745,
+        "loadEventEnd": 2660.2000000001863,
+        "transferSize": 14880
+      },
+      "fcp": 1812
+    },
+    {
+      "run": "pages",
+      "path": "/case-studies/cloudy-tales-collaboration",
+      "http": 200,
+      "timing": {
+        "responseStatus": 200,
+        "responseStart": 248.6000000005588,
+        "requestStart": 169.1000000005588,
+        "responseEnd": 1485.9000000003725,
+        "domContentLoadedEventEnd": 1783.2999999998137,
+        "loadEventEnd": 2382.7000000001863,
+        "transferSize": 10645
+      },
+      "fcp": 1796
+    },
+    {
+      "run": "pages",
+      "path": "/case-studies/evento-ticketing-scalability",
+      "http": 200,
+      "timing": {
+        "responseStatus": 200,
+        "responseStart": 97.59999999962747,
+        "requestStart": 1.400000000372529,
+        "responseEnd": 1267.7000000001863,
+        "domContentLoadedEventEnd": 1365.5999999996275,
+        "loadEventEnd": 1518.0999999996275,
+        "transferSize": 10727
+      },
+      "fcp": 1352
+    },
+    {
+      "run": "pages",
+      "path": "/case-studies/marketing-addict-ai-optimization",
+      "http": 200,
+      "timing": {
+        "responseStatus": 200,
+        "responseStart": 74.20000000018626,
+        "requestStart": 0.8000000007450581,
+        "responseEnd": 720.6000000005588,
+        "domContentLoadedEventEnd": 815.8000000007451,
+        "loadEventEnd": 903.9000000003725,
+        "transferSize": 10683
+      },
+      "fcp": 808
+    },
+    {
+      "run": "pages",
+      "path": "/services",
+      "http": 200,
+      "timing": {
+        "responseStatus": 200,
+        "responseStart": 73.70000000018626,
+        "requestStart": 0.900000000372529,
+        "responseEnd": 101.5,
+        "domContentLoadedEventEnd": 152.79999999981374,
+        "loadEventEnd": 225.79999999981374,
+        "transferSize": 11574
+      },
+      "fcp": 148
+    },
+    {
+      "run": "pages",
+      "path": "/products",
+      "http": 200,
+      "timing": {
+        "responseStatus": 200,
+        "responseStart": 88.09999999962747,
+        "requestStart": 1,
+        "responseEnd": 493.70000000018626,
+        "domContentLoadedEventEnd": 594.5999999996275,
+        "loadEventEnd": 649.8999999994412,
+        "transferSize": 14791
+      },
+      "fcp": 568
+    },
+    {
+      "run": "pages",
+      "path": "/careers",
+      "http": 200,
+      "timing": {
+        "responseStatus": 200,
+        "responseStart": 76.6000000005588,
+        "requestStart": 1,
+        "responseEnd": 778.3000000007451,
+        "domContentLoadedEventEnd": 875.5,
+        "loadEventEnd": 930,
+        "transferSize": 13869
+      },
+      "fcp": 864
+    },
+    {
+      "run": "pages",
+      "path": "/contact",
+      "http": 200,
+      "timing": {
+        "responseStatus": 200,
+        "responseStart": 73.30000000074506,
+        "requestStart": 0.8000000007450581,
+        "responseEnd": 97.90000000037253,
+        "domContentLoadedEventEnd": 126.30000000074506,
+        "loadEventEnd": 215.20000000018626,
+        "transferSize": 11495
+      },
+      "fcp": 184
+    },
+    {
+      "run": "cta",
+      "path": "/products",
+      "http": 200,
+      "timing": {
+        "responseStatus": 200,
+        "responseStart": 260.09999999962747,
+        "requestStart": 188.3999999994412,
+        "responseEnd": 316.3999999994412,
+        "domContentLoadedEventEnd": 627.0999999996275,
+        "loadEventEnd": 1124,
+        "transferSize": 14791
+      },
+      "fcp": 640
+    },
+    {
+      "run": "cta",
+      "path": "/services",
+      "http": 200,
+      "timing": {
+        "responseStatus": 200,
+        "responseStart": 79.69999999925494,
+        "requestStart": 1.8999999994412065,
+        "responseEnd": 127,
+        "domContentLoadedEventEnd": 206.69999999925494,
+        "loadEventEnd": 267.59999999962747,
+        "transferSize": 11574
+      },
+      "fcp": 168
+    }
+  ],
+  "clicks": [
+    {
+      "run": "observations",
+      "path": "/case-studies/wizhealth-ai-diagnostic",
+      "hit": true,
+      "headingObservedMs": null,
+      "sameDocument": true,
+      "targetResponses": []
+    },
+    {
+      "run": "interactions",
+      "path": "/case-studies/wizhealth-ai-diagnostic",
+      "hit": true,
+      "headingObservedMs": 1574,
+      "sameDocument": true,
+      "targetResponses": [
+        [
+          "Fetch",
+          "https://www.cynbit.in/case-studies/wizhealth-ai-diagnostic",
+          200,
+          481
+        ]
+      ]
+    },
+    {
+      "run": "interactions",
+      "path": "/case-studies/evento-ticketing-scalability",
+      "hit": false,
+      "headingObservedMs": null,
+      "sameDocument": true,
+      "targetResponses": []
+    },
+    {
+      "run": "pages",
+      "path": "/services",
+      "hit": true,
+      "headingObservedMs": 89,
+      "sameDocument": true,
+      "targetResponses": []
+    },
+    {
+      "run": "cta",
+      "path": "/contact",
+      "hit": true,
+      "headingObservedMs": null,
+      "sameDocument": true,
+      "targetResponses": [
+        [
+          "Fetch",
+          "https://www.cynbit.in/contact",
+          200,
+          214
+        ]
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "label": "Cloud Strategy",
+      "hit": true,
+      "cardCount": 13
+    },
+    {
+      "label": "Digital Marketing",
+      "hit": true,
+      "cardCount": 13
+    },
+    {
+      "label": "Software Dev",
+      "hit": true,
+      "cardCount": 13
+    },
+    {
+      "label": "All Success Stories",
+      "hit": true,
+      "cardCount": 13
+    }
+  ],
+  "fragments": [
+    [
+      "#cynbit-studio",
+      true
+    ],
+    [
+      "#tenantease",
+      true
+    ],
+    [
+      "#revio",
+      true
+    ],
+    [
+      "#inquiry",
+      true
+    ]
+  ],
+  "validation": {
+    "type": "validation",
+    "noValidate": false,
+    "inputs": [
+      {
+        "type": "text",
+        "name": "fullName",
+        "labels": [],
+        "required": true,
+        "maxLength": -1,
+        "cases": {
+          "empty": [
+            false,
+            true,
+            false,
+            0
+          ],
+          "whitespace": [
+            true,
+            false,
+            false,
+            3
+          ],
+          "invalidEmail": [
+            true,
+            false,
+            false,
+            12
+          ],
+          "unicode": [
+            true,
+            false,
+            false,
+            6
+          ],
+          "long": [
+            true,
+            false,
+            false,
+            6000
+          ],
+          "validEmail": [
+            true,
+            false,
+            false,
+            23
+          ]
+        }
+      },
+      {
+        "type": "email",
+        "name": "email",
+        "labels": [],
+        "required": true,
+        "maxLength": -1,
+        "cases": {
+          "empty": [
+            false,
+            true,
+            false,
+            0
+          ],
+          "whitespace": [
+            false,
+            true,
+            false,
+            0
+          ],
+          "invalidEmail": [
+            false,
+            false,
+            true,
+            12
+          ],
+          "unicode": [
+            false,
+            false,
+            true,
+            6
+          ],
+          "long": [
+            false,
+            false,
+            true,
+            6000
+          ],
+          "validEmail": [
+            true,
+            false,
+            false,
+            23
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "name": "company",
+        "labels": [],
+        "required": false,
+        "maxLength": -1,
+        "cases": {
+          "empty": [
+            true,
+            false,
+            false,
+            0
+          ],
+          "whitespace": [
+            true,
+            false,
+            false,
+            3
+          ],
+          "invalidEmail": [
+            true,
+            false,
+            false,
+            12
+          ],
+          "unicode": [
+            true,
+            false,
+            false,
+            6
+          ],
+          "long": [
+            true,
+            false,
+            false,
+            6000
+          ],
+          "validEmail": [
+            true,
+            false,
+            false,
+            23
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "name": "industry",
+        "labels": [],
+        "required": false,
+        "maxLength": -1,
+        "cases": {
+          "empty": [
+            true,
+            false,
+            false,
+            0
+          ],
+          "whitespace": [
+            true,
+            false,
+            false,
+            3
+          ],
+          "invalidEmail": [
+            true,
+            false,
+            false,
+            12
+          ],
+          "unicode": [
+            true,
+            false,
+            false,
+            6
+          ],
+          "long": [
+            true,
+            false,
+            false,
+            6000
+          ],
+          "validEmail": [
+            true,
+            false,
+            false,
+            23
+          ]
+        }
+      },
+      {
+        "type": "textarea",
+        "name": "message",
+        "labels": [],
+        "required": true,
+        "maxLength": -1,
+        "cases": {
+          "empty": [
+            false,
+            true,
+            false,
+            0
+          ],
+          "whitespace": [
+            true,
+            false,
+            false,
+            3
+          ],
+          "invalidEmail": [
+            true,
+            false,
+            false,
+            12
+          ],
+          "unicode": [
+            true,
+            false,
+            false,
+            6
+          ],
+          "long": [
+            true,
+            false,
+            false,
+            6000
+          ],
+          "validEmail": [
+            true,
+            false,
+            false,
+            23
+          ]
+        }
+      }
+    ]
+  }
+}
