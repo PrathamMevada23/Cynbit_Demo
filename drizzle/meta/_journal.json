@@ -8,6 +8,13 @@
       "when": 1795446729563,
       "tag": "0000_familiar_boomerang",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1795450673579,
+      "tag": "0001_smart_mimic",
+      "breakpoints": true
     }
   ]
 }

@@ -19,6 +19,8 @@ pnpm dev
 
 Open [localhost:3000](http://localhost:3000). Choose **See relevant work** on Cloud, open **Cloud collaboration platform**, and select **Discuss a similar project**. Use **Use sample details**, then **Send demo inquiry**. A successful response shows the persisted receipt ID and its service and project.
 
+For an interactive case-study example, open [Document intake automation](http://localhost:3000/case-studies/document-intake) and select **Try the live demo** under **Evidence status**. Extract the missing-number sample, enter `SAMPLE-204` from the source document, and approve it. The demo runs on fictional text in the browser. Case evidence also supports an optional HTTPS proof URL. Populate `case_evidence.proof_url` only with a reviewed, public source that substantiates the specific case. The fictional seeds leave it blank.
+
 The Docker port is loopback only and the data volume survives restarts. `docker compose stop` stops the assessment database without deleting it. If using another PostgreSQL instance, set the server-only `DATABASE_URL` in your ignored `.env.local`.
 
 ## Checks

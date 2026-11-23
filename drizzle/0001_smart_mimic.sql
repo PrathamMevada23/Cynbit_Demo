@@ -1,0 +1,1 @@
+ALTER TABLE "case_evidence" ADD COLUMN "proof_url" text;

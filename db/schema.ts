@@ -29,6 +29,7 @@ export const evidence = pgTable("case_evidence", {
   caseSlug: text("case_slug").primaryKey().references(() => cases.slug),
   kind: text({ enum: ["synthetic-scenario"] }).notNull(),
   description: text().notNull(),
+  proofUrl: text("proof_url"),
 });
 
 export const inquiries = pgTable("inquiries", {

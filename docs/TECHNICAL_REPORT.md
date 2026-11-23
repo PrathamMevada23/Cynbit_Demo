@@ -23,6 +23,8 @@ The Next.js App Router renders catalog pages from the same repository used by th
 
 The SQL migration creates services, case studies, mappings, evidence, inquiries, and rate-window tables. The seed explicitly maps four synthetic cases to three service areas. Case and service context remain in the URL through reload. The inquiry stores foreign keys and validates that the case is published and compatible with the service. The composite foreign key enforces the pair when both identifiers are present.
 
+The Document intake case links to an interactive assessment demo that extracts fields from a sample invoice, requires a human correction when a field is missing, and runs approval checks in the browser. Case evidence can also link to a reviewed HTTPS source through the optional `proof_url` column. The seeded fictional cases have no client proof URLs.
+
 ## Demo write controls
 
 Only the documented synthetic sample is storable. The route limits JSON body size, validates the provided Origin when present, and validates payload shape and canonical context. The form keeps the same idempotency key when retrying the same payload. A transaction-scoped advisory lock and unique constraint serialize duplicate keys across replicas. New requests use PostgreSQL counters with an 8-per-client and 60-global limit per 10-minute window. Outside Vercel, or when its platform client address is unavailable, callers share a local bucket. The global quota applies independently of that address. Rate buckets store hashes and expire from the table during later submissions. The endpoint provides no listing or admin surface and delivers no email.
