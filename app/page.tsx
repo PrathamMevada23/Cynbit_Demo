@@ -1,9 +1,10 @@
 import Link from "next/link";
 import { FolderSearch, LayoutGrid, MessageSquareText } from "lucide-react";
 import { ServiceIcon } from "@/components/service-icon";
-import { buttonVariants, cn } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { listServices } from "@/lib/catalog";
 import { route } from "@/lib/contracts";
+import { cn } from "@/lib/utils";
 
 export const dynamic = "force-dynamic";
 

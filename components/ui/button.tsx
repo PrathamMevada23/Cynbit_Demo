@@ -1,9 +1,6 @@
 import { cva, type VariantProps } from "class-variance-authority";
-import { clsx, type ClassValue } from "clsx";
-import { twMerge } from "tailwind-merge";
 import type { ComponentProps } from "react";
-
-export function cn(...values: ClassValue[]) { return twMerge(clsx(values)); }
+import { cn } from "@/lib/utils";
 
 export const buttonVariants = cva(
   "inline-flex min-h-11 items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-sm font-semibold transition-colors disabled:cursor-not-allowed disabled:opacity-60 [&_svg]:size-4",
