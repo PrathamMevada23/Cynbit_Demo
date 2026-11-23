@@ -2,7 +2,7 @@
 
 ## Problem and implementation
 
-The prior audit found a gap between choosing a service, finding relevant work, and starting an inquiry. Services reached the unfiltered 13-card index, the Cloud filter did not change that result in the tested browser, and the sampled case detail opened Contact with neither service nor project carried over. The prototype adds a direct path across each handoff. [User journey audit](../FINAL_USER_JOURNEY_AUDIT.md)
+The website review found a gap between choosing a service, finding relevant work, and starting an inquiry. The Services menu opened an unfiltered 13-card index, the Cloud filter left it unchanged in the tested browser, and the sampled case detail opened Contact without carrying either context field. The prototype connects these handoffs. [Live demo](https://cynbit-demo.vercel.app/)
 
 | Step | Project behavior |
 |---|---|
@@ -33,10 +33,10 @@ This is a synthetic-data assessment. A real deployment accepting leads would nee
 
 ## Verification and evaluation
 
-Local verification passed ESLint, TypeScript, 6 Vitest tests, and 8 Playwright tests against the production build and PostgreSQL 17. The browser suite covers filters, search, invalid and missing routes, context on reload and history, escaped search wildcards, field validation, failed-request recovery, concurrent duplicate writes, durable rate limiting, and layouts at 375/768/1440 CSS pixels. It checked the stored receipt and duplicate row count directly in PostgreSQL. A separate local smoke test confirmed that an unconfigured database returns HTTP 503 from the catalog API and displays the page error state. See [README](../README.md) for reproducible commands.
+Local verification passed ESLint, TypeScript, and the production build. Eight Vitest tests passed. The original eight Playwright tests passed against local PostgreSQL 17, and the later Evidence walkthrough passed in a separate browser run. The checks cover filtering, context across navigation, validation, recovery from request failure, duplicate writes, rate limiting, and layouts at 375, 768, and 1440 CSS pixels. The test suite checked receipt persistence and duplicate row counts directly in PostgreSQL. A separate smoke test confirmed that an unconfigured database returns HTTP 503 and shows the page error state. [Reproduction commands](../README.md#checks)
 
 The Cloud scenario is the before/after comparison. The observed production handoff passed **0 of 2** target context fields. The local Playwright walkthrough confirmed **2 of 2** with one action from a service to relevant work, one action from the case detail to inquiry, and a stored receipt. The comparison measures task completion and context carryover. Production conversion and business outcomes remain unmeasured.
 
 ## Deployment
 
-The application builds as a standard Next.js Node.js project. Local PostgreSQL is migrated and seeded. Hosted verification awaits a Vercel project, authorized deployment access, and a dedicated managed PostgreSQL connection. The [deployment runbook](../README.md#vercel-deployment) covers secrets, migration, seeding, deployment and public smoke checks.
+The prototype is deployed to Vercel with Neon PostgreSQL. The public catalog returned HTTP 200 with three services and four demo cases. A hosted synthetic inquiry returned HTTP 201 and a receipt. A read-only query verified that the same receipt was stored in Neon with `cloud` and `cloud-collaboration` attached. [Live deployment](https://cynbit-demo.vercel.app/) · [Deployment steps](../README.md#vercel-deployment)

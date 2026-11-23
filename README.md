@@ -2,7 +2,14 @@
 
 An independent Full Stack Developer Intern assessment prototype for Cynbit Technologies. The demo connects service discovery, relevant case studies, and a contextual project inquiry that saves a receipt to PostgreSQL.
 
-The four case studies are fictional. The inquiry API only accepts the supplied synthetic details. No inquiries are delivered to Cynbit.
+[Live demo](https://cynbit-demo.vercel.app/) · [Technical report](docs/TECHNICAL_REPORT.md)
+
+The four case studies are fictional. The inquiry API accepts the supplied synthetic details and stores an assessment receipt.
+
+## Try the demo
+
+1. **Interactive Evidence.** Open [Document intake automation](https://cynbit-demo.vercel.app/case-studies/document-intake) and choose **Try the live demo**. Extract the sample invoice, enter `SAMPLE-204` in the missing invoice-number field, then approve it.
+2. **Contextual inquiry.** From [Services](https://cynbit-demo.vercel.app/#services), choose **Cloud → See relevant work → Cloud collaboration platform → Discuss a similar project**. Check that the service and case study are preselected. Click **Use sample details → Send demo inquiry** to get a saved receipt.
 
 ## Local setup
 
@@ -45,9 +52,3 @@ Playwright starts the production build on 127.0.0.1:3131. It requires a migrated
 5. Deploy. Visit the generated URL, confirm the catalog contains four cases, and complete the synthetic Cloud walkthrough above. Record the URL and confirm that its visibility is suitable for the assessor.
 
 Keep connection strings out of Git, client-side settings, and the technical report. After deployment, use the synthetic sample only. The prototype has no admin endpoints, staff dashboard, or email delivery.
-
-## Project files
-
-- [Technical report](docs/TECHNICAL_REPORT.md)
-- [Final project scope](FINAL_PROJECT_SCOPE.md)
-- [User journey audit](FINAL_USER_JOURNEY_AUDIT.md)
